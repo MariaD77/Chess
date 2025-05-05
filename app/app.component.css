@@ -1,0 +1,34 @@
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 85px);
+  grid-template-rows: repeat(8, 85px);
+  border: 2px solid #333;
+  width: fit-content;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.square.white {
+  background-color: #eee;
+}
+
+.square.black {
+  background-color: #666;
+  color: white;
+}
+
+
+.square.selected {
+  border: 3px solid yellow;
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+
+

@@ -1,0 +1,14 @@
+
+<div class="chessboard">
+  <div
+    *ngFor="let square of board; let i = index"
+    class="square"
+    [ngClass]="getSquareColor(i)"
+    (click)="onSquareClick(i)"
+  >
+    {{ square }}
+  </div>
+</div>
+
+
+
